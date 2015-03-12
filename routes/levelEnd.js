@@ -18,7 +18,7 @@ function levelEnd(route) {
 			resetLevel();
 			$('#content').append('<a id="nextBtn" href="./' + route.params.level  + '/1"><button>Retry level</button></a>');
 		} else {
-			$('#content').append('<a id="nextBtn" href="./gameover"><button>Game over</button></a>');
+			page('/gameover');
 		}
 	}
 }

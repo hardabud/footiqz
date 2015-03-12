@@ -18,8 +18,11 @@ function choiceView(choice, level, next, playerId) {
 	}
 */
 	$('#content').append(
+		'<h1>Choice</h1>' +
 		'<select id="choiceSelect">' +
-			'<option value="0">Choose player</option>');
+			'<option value="0">--Choose player--</option>' +
+		'</select>'
+	);
 
 	for(i=0;i<choice.length;i++) { 
 		this.id = choice[i].id;
@@ -30,7 +33,7 @@ function choiceView(choice, level, next, playerId) {
 		);
 	}
 
-	$('#content').append('<button id="answer">OK</button>')
+	$('#content').append('<button id="answer">OK</button><br/><br/>')
 	$('#answer').on('click', function(e) {
 		var val = $('#choiceSelect').val();
 		if(val != '0') {

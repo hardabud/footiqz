@@ -1,5 +1,6 @@
 function careerView(career) {
 	$('#content').append(
+		'<h1>Career</h1>' +
 		'<table id="careerTable">' +
 			'<tr class="tableHead">' +
 				'<td>Years</td>' +
@@ -13,7 +14,7 @@ function careerView(career) {
 		if(career[i].loan == true) { var loan = '<b> > </b>'; }
 		else { var loan = '   '; }
 		$('#careerTable').append(
-			'<tr class="tableHead">' +
+			'<tr>' +
 				'<td>' + career[i].years + '</td>' +
 				'<td>' + loan + '</td>' +
 				'<td>' + career[i].club + '</td>' +

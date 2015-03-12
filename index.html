@@ -23,67 +23,114 @@
 	<script src="router.js"></script>
 	<base href="/basic/" >
 	<style>
-body { font-family: arial; }
-table {width: 98%;}
+body { 
+	font-family: sans-serif; 
+	color: rgb(72,69,55);
+	padding: 0;
+	margin: 0;
+	background-color: rgb(227,226,219);
+	font-size: 20px; 
+}
+select {
+	width: 98%; 
+	font-size: 20px; 
+	margin: none; 
+	position: relative;
+	left: 1%;
+}
+input {
+	width: 98%; 
+	font-size: 20px; 
+	margin: none; 
+	position: relative;
+	left: 1%;
+}
+option {
+	color: rgb(72,69,55);
+}
+#hints  { 
+	background-color: rgb(200,196,183); 
+	padding: 5px; 
+}
+.tableHead { 
+	font-weight: bold
+}
+#head {
+	width: 100%; 
+	background-color: rgb(72,69,55); 
+	font-size: 30px; 
+	color: rgb(200,196,183); 
+	height: 40px; 
+	text-align: center
+}
+#headLink {
+	text-decoration: none;
+	font-weight: none;
+	color: white
+}
+#headSub {
+	font-size: 16px;
+}
+hr {
+	opacity: 0.5
+}
+h1 {
+	font-size: 30px
+}
+table {
+	width: 98%;
+	padding: 2px;	
+}
 button {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  width: 98%; 
-  font-size: 24px; 
-  margin: none; 
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+		touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	width: 98%; 
+	font-size: 24px; 
+	margin: none; 
+	color: rgb(72,69,55);
+	background-color: rgb(172,167,147);
+	border-color: rgb(72,69,55);
+	position: relative;
+	left: 1%;
 }
-
 button:hover, 
-button:focus 
+button:focus,
 button:active {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+	color: rgb(172,167,147);
+	background-color: rgb(72,69,55);
+	border-color: rgb(172,167,147);
 }
 
-button#answer {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+img {
+	width: 100%;
+	height: auto;
 }
-
-button#answer:hover, 
-button#answer:focus 
-button#answer:active {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
-}
-
-select { width: 98%; font-size: 24px; margin: none; }
-#hints  { background-color: lightgray; padding: 5px; }
-#btnHint1, #btnHint2, #btnHint3 { width: 80%; position: relative; left: 10%; }
 	</style>
 </head>
 <body onresize="style()" onload="style()">
 
+<div id="head">
+	<a id="headLink" href="./">FOOTIQZ <span id="headSub">- the football quiz</span></a>
+</div>
 <div id="content">
-	<a href="./"><button>Index</button></a>
+	<img src="http://www.hardabud.com/foot/img/footiqz.png"></img>
+	<a href="./1/1"><button>Play</button></a>
+	<a href="./rules"><button>Rules</button></a> 
+	<a href="./rank"><button>Ranking</button></a>
 </div>
 
 <script>

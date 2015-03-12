@@ -2,6 +2,7 @@ function hintsView(hints) {
 
 	$('#content').append(
 		'<br/>' +
+		'<h1>Hints</h1>' +
 		'<div id="hints"></div>' +
 		'<br/>'			
 	);
